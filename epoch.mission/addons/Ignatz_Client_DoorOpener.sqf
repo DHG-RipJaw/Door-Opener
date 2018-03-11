@@ -15,7 +15,7 @@ _NeededItems = [
 
 params [["_do",'close']];
 if ((player == vehicle player) || !(player == (driver (vehicle player)))) exitwith {false};
-if ({(vehicle player) iskindof _x} count _WorkingVehicleTypes > 0) exitwith {false};
+if !({(vehicle player) iskindof _x} count _WorkingVehicleTypes > 0) exitwith {false};
 _config = 'CfgEpochClient' call EPOCH_returnConfig;
 _buildingJammerRange = getNumber(_config >> "buildingJammerRange");
 _value = 0;
