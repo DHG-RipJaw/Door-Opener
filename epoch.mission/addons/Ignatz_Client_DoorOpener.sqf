@@ -1,3 +1,4 @@
+/*########################### SETTINGS #########################*/
 _OpenableObjets = [
 /*	"WoodLargeWallDoorL_EPOCH", 	*/
 /*	"WoodLargeWallDoor_EPOCH", 		*/
@@ -10,6 +11,7 @@ _NeededItems = [
 	[1,"CircuitParts",true],		/* [count,"itemclass",RemoveOnUse] */
 	[250,"Energy",true]				/* [count,"itemclass",RemoveOnUse] */
 ];
+/*########################### SETTINGS #########################*/
 
 params [["_do",'close']];
 if ((player == vehicle player) || !(player == (driver (vehicle player)))) exitwith {false};
